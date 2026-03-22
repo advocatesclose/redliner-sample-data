@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<article class="filing">
+  <header class="filing-header">
+    <h1>{{ page.company }}</h1>
+    <div class="filing-meta">
+      <span class="filing-type">{{ page.filing_type }}</span>
+      <span class="filing-counsel">Counsel: {{ page.counsel }}</span>
+      <span class="filing-date">{{ page.filing_date }}</span>
+      {% if page.edgar_url %}
+        <a href="{{ page.edgar_url }}" class="edgar-link">View on EDGAR</a>
+      {% endif %}
+    </div>
+  </header>
+
+  {% if page.sections.size > 0 %}
+  <nav class="document-toc">
+    <h2>Registration Statement Sections</h2>
+    <ul>
+      {% for section in page.sections %}
+        <li><a href="{{ section.url | relative_url }}">{{ section.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% endif %}
+
+  {% if page.exhibits.size > 0 %}
+  <nav class="document-toc">
+    <h2>Exhibits</h2>
+    <ul>
+      {% for exhibit in page.exhibits %}
+        <li>
+          <a href="{{ exhibit.url | relative_url }}">{{ exhibit.title }}</a>
+          <span class="exhibit-number">{{ exhibit.number }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% endif %}
+
+  <div class="filing-content">
+    {{ content }}
+  </div>
+</article>

@@ -1,0 +1,42 @@
+# Redliner Sample Data
+# https://advocatesclose.github.io/redliner-sample-data/
+
+title: Redliner — Sample Filings
+description: >-
+  Sample SEC registration statements for SPAC IPOs,
+  organized for cross-filing comparison and redline analysis.
+url: "https://advocatesclose.github.io"
+baseurl: "/redliner-sample-data"
+
+# Build
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Collections — each filing is a collection of documents
+collections:
+  filings:
+    output: true
+    permalink: /filings/:path/
+
+# Default front matter
+defaults:
+  - scope:
+      path: "_filings"
+      type: "filings"
+    values:
+      layout: "exhibit"
+
+# Plugins (GitHub Pages supported)
+plugins:
+  - jekyll-seo-tag
+
+# Exclude dev files from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - scripts/
+  - "*.py"

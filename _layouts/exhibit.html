@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<article class="exhibit">
+  <header class="exhibit-header">
+    <div class="exhibit-breadcrumb">
+      <a href="{{ '/filings/' | relative_url }}">Filings</a> &rsaquo;
+      <a href="{{ page.filing_url | relative_url }}">{{ page.company }}</a> &rsaquo;
+      <span>{{ page.title }}</span>
+    </div>
+    <h1>{{ page.title }}</h1>
+    <div class="exhibit-meta">
+      <span class="exhibit-company">{{ page.company }}</span>
+      {% if page.exhibit_number %}
+        <span class="exhibit-number">Exhibit {{ page.exhibit_number }}</span>
+      {% endif %}
+      <span class="exhibit-counsel">{{ page.counsel }}</span>
+    </div>
+  </header>
+
+  <div class="document-body">
+    {{ content }}
+  </div>
+</article>

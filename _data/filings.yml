@@ -1,0 +1,38 @@
+# Master filing registry.
+# Each entry becomes a column in the comparison matrix.
+
+- id: new_providence_iii
+  company: "New Providence Acquisition Corp. III"
+  filing_type: "S-1"
+  counsel: "Loeb & Loeb"
+  underwriter: "Cantor Fitzgerald"
+  filing_date: "2025-04-04"
+  cik: "1846416"
+  edgar_url: "https://edgar-mirror.sec-api.io/1846416/000149315224044245/forms-1.htm"
+
+- id: new_providence_iii_a
+  company: "New Providence Acquisition Corp. III"
+  filing_type: "S-1/A"
+  counsel: "Loeb & Loeb"
+  underwriter: "Cantor Fitzgerald"
+  filing_date: "2025-01-14"
+  cik: "1846416"
+  edgar_url: "https://edgar-mirror.sec-api.io/1846416/000149315225002259/forms-1a.htm"
+
+- id: qdro
+  company: "QDRO Acquisition Corp."
+  filing_type: "S-1/A (Amendment No. 3)"
+  counsel: "Loeb & Loeb"
+  underwriter: "Cantor Fitzgerald"
+  filing_date: "2026-03-20"
+  cik: "2083217"
+  edgar_url: "https://edgar-mirror.sec-api.io/2083217/000121390026032439/ea0254520-08.htm"
+
+- id: iron_horse_ii
+  company: "Iron Horse Acquisition II Corp."
+  filing_type: "S-1"
+  counsel: "Loeb & Loeb"
+  underwriter: "Cantor Fitzgerald"
+  filing_date: ""
+  cik: ""
+  edgar_url: ""

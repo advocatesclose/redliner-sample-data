@@ -1,0 +1,80 @@
+# Standard document types across SPAC filings.
+# These become rows in the comparison matrix.
+
+# Registration Statement Sections
+- id: cover_page
+  title: "Cover Page"
+  category: registration
+
+- id: prospectus_summary
+  title: "Prospectus Summary"
+  category: registration
+
+- id: risk_factors
+  title: "Risk Factors"
+  category: registration
+
+- id: use_of_proceeds
+  title: "Use of Proceeds"
+  category: registration
+
+- id: dilution
+  title: "Dilution"
+  category: registration
+
+- id: mda
+  title: "MD&A — Results of Operations"
+  category: registration
+
+- id: proposed_business
+  title: "Proposed Business"
+  category: registration
+
+- id: management
+  title: "Management"
+  category: registration
+
+- id: description_of_securities
+  title: "Description of Securities"
+  category: registration
+
+- id: underwriting
+  title: "Underwriting"
+  category: registration
+
+# Exhibits
+- id: underwriting_agreement
+  title: "Form of Underwriting Agreement"
+  category: exhibit
+
+- id: certificate_of_incorporation
+  title: "Certificate of Incorporation / Memorandum of Association"
+  category: exhibit
+
+- id: articles_of_association
+  title: "Articles of Association / Bylaws"
+  category: exhibit
+
+- id: warrant_agreement
+  title: "Warrant Agreement"
+  category: exhibit
+
+- id: trust_agreement
+  title: "Investment Management Trust Agreement"
+  category: exhibit
+
+- id: letter_agreement
+  title: "Letter Agreement (Founders)"
+  category: exhibit
+
+- id: registration_rights
+  title: "Registration Rights Agreement"
+  category: exhibit
+
+- id: audit_committee_charter
+  title: "Audit Committee Charter"
+  category: exhibit
+
+- id: code_of_ethics
+  title: "Code of Ethics"
+  category: exhibit
